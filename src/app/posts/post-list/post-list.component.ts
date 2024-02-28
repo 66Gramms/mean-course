@@ -6,6 +6,8 @@ import {
 import { MatAccordion } from '@angular/material/expansion';
 import { NgFor, NgIf } from '@angular/common';
 
+import { Post } from '../post.model';
+
 @Component({
   selector: 'app-post-list',
   standalone: true,
@@ -25,5 +27,5 @@ export class PostListComponent {
   //   { title: 'Fuck you', content: 'Fuck you Ezekiel' },
   //   { title: 'No U', content: 'No, fuck you!' },
   // ];
-  @Input() posts: any = [];
+  @Input() posts: Post[] = [];
 }
