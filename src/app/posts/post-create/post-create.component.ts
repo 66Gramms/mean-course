@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   imports: [FormsModule],
 })
 export class PostCreateComponent {
-  enteredValue = '';
+  enteredValue = 'asd';
   newPost = 'NO CONTENT';
 
   onAddPost() {
