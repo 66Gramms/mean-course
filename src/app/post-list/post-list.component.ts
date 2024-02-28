@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {
   MatExpansionPanel,
   MatExpansionPanelHeader,
@@ -25,5 +25,5 @@ export class PostListComponent {
   //   { title: 'Fuck you', content: 'Fuck you Ezekiel' },
   //   { title: 'No U', content: 'No, fuck you!' },
   // ];
-  posts: any = [];
+  @Input() posts: any = [];
 }

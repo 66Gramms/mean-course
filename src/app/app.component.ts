@@ -17,5 +17,9 @@ import { PostListComponent } from './post-list/post-list.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'mean-course';
+  posts: any = [];
+
+  onPostAdded(post: any) {
+    this.posts.push(post);
+  }
 }
